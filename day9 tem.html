@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Temperature(temp, scale) {
+    if (scale === "C") {
+        return (temp - 32) * 5 / 9;
+    }
+     else if (scale === "F") {
+        return (temp * 9 / 5) + 32;
+    }
+     else{
+        return "Invalid ";
+    }
+}
+
+console.log(Temperature(32, "C")); 
+console.log(Temperature(100, "C")); 
+console.log(Temperature(0, "C")); 
+console.log(Temperature(35, "F")); 
+console.log(Temperature(44, "X")); 
+
+    </script>
+</body>
+</html>

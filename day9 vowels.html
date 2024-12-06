@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Vowels(a) {
+    const vowels = "aeiouAEIOU";
+    
+    for (let i = 0; i < a.length; i++) {
+        if (vowels.includes(a[i])) {
+            return "It contains vowels";
+        }
+    }
+    
+    return "It doesn't contain vowels"; 
+}
+
+console.log(Vowels("keerthi"));
+console.log(Vowels("butterfly")); 
+console.log(Vowels("mango")); 
+console.log(Vowels("hello")); 
+console.log(Vowels("sky"));
+
+    </script>
+</body>
+</html>
